@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <body>
 
 <div class="container">
@@ -105,7 +108,8 @@
         align-items: center;
         margin-top: 40px;
         height: 1100px;
-        width: 575px;
+        width: 90%;
+        max-width: 575px;
         background: #fff7df;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
@@ -115,6 +119,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        /* justify-content: center; */
+        width: 100%;
+        /* background: pink; */
     }
     .profile-image {
         width: 150px;
@@ -129,6 +136,7 @@
         margin: 15px;
         font-size: 35px;
         font-weight:300;
+        text-align: center;
     }
     h2 {
         margin: 2.5px;
@@ -143,11 +151,14 @@
         justify-content: center;
     }
     .button {
-        width: 500px;
+        position: relative;
+        width: 90%;
+        max-width: 500px;
         height: 70px;
         margin: 5px;
         border-radius: 50px;
         background: #fdf7e6;
+        color: black;
         border: 1px solid black;
         font-size: 15px;
     }
