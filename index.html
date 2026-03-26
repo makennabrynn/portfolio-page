@@ -57,12 +57,12 @@
             <button class="small-button button" popovertarget="history-museum" popovertargetaction="hide">Close</button>
             <div class="popup-container">
                 <p>Here's some images of the museum</p>
-                <div style="display: flex; flex-direction: row;">
+                <div class="images-row">
                     <img class="museum-image" src="media/museum.JPG">
                     <img class="museum-image" src="media/museum3.JPG">
                 </div>
                 <p>And some images of the app I made (currently on display!)</p>
-                <div style="display: flex; flex-direction: row;">
+                <div class="images-row">
                     <img class="museum-image" src="media/museum2.jpg">
                     <img class="museum-image" src="media/museum4.jpg">
                 </div>
@@ -221,6 +221,10 @@
         border-radius: 12px;
         border: 1px solid black;
     }
+    .images-row {
+        display: flex; 
+        flex-direction: row;
+    }
     .museum-image {
         width: 350px;
         aspect-ratio: 1;
@@ -248,6 +252,16 @@
     @media screen and (max-width: 452px) {
     .container {
         height: 1200px;
+    }
+    }
+    @media screen and (max-width: 855px) {
+    .images-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .museum-image {
+        width: 90%;
+        height: auto;
     }
     }
 </style>
