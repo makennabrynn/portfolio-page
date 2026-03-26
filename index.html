@@ -46,6 +46,7 @@
         <!-- buttons and links -->
         <button class="button" popovertarget="furniture-site">Furniture Site</button>
         <button class="button" popovertarget="history-museum">Kansas Museum of History App</button>
+        <button class="button" popovertarget="salon-site">Salon Site</button>
         <a href="https://www.morriswa.org/cmx/battleship/start" target="_blank" class="button text">
             Battleship Application
             <img class="external-link" src="media/external-link.png">
@@ -57,8 +58,8 @@
             <div class="popup-container">
                 <p>Here's some images of the museum</p>
                 <div style="display: flex; flex-direction: row;">
-                    <img class="museum-image" src="media/museum.jpg">
-                    <img class="museum-image" src="media/museum3.jpg">
+                    <img class="museum-image" src="media/museum.JPG">
+                    <img class="museum-image" src="media/museum3.JPG">
                 </div>
                 <p>And some images of the app I made (currently on display!)</p>
                 <div style="display: flex; flex-direction: row;">
@@ -77,6 +78,14 @@
                     This website is currently under construction as a personal project. <br>
                     Vue.js , Node.js (Express), PostgreSQL
                 </p>
+            </div>
+        </div>
+
+        <!-- salon site popover content -->
+        <div popover id="salon-site" class="popover">
+            <button class="small-button button" popovertarget="salon-site" popovertargetaction="hide">Close</button>
+            <div class="popup-container" style="gap: 20px;">
+                <iframe width="100%" height="600" src="https://www.youtube.com/embed/HNX3ZSx0z3w?si=oxUlnDAnQgdHYnn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
 
@@ -107,7 +116,7 @@
         flex-direction: column;
         align-items: center;
         margin-top: 40px;
-        height: 1100px;
+        height: 1150px;
         width: 90%;
         max-width: 575px;
         background: #fff7df;
@@ -234,5 +243,11 @@
         height: 15px;
         width: auto;
         margin-left: 7px;
+    }
+
+    @media screen and (max-width: 452px) {
+    .container {
+        height: 1200px;
+    }
     }
 </style>
